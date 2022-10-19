@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>Spooky Halloween</title>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/0NGHHvNB9ByTLD8W/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="wrapper">
+        <nav>
+            <img src="styles/images/side_logo.png" class="logo" alt="Logo" id="Home">
+            <ul> 
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Googlemap">Map</a></li>
+                <li><a href="#Participating-Houses">Houses</a></li>
+                <li><a href="#Participating-Houses">Sign Up</a></li>
+            </ul>
+         </nav>
+            </div>
+        </header>    
+        <div class="text-box">
+            <div class="h3disclaimer"><h4>Disclaimer: Please use Desktop mode on mobile phones</h4></div>
+        <h1>NORTH HARBOUR HALLOWEEN</h1>
+            <div id="Participating-Houses"></div>
+        <h3>This website is created for the community<br> of North Harbour to participate in a Spooky<br> Halloween event which is held on Monday, 31st October</h3>
+           <div class="myform">    
+        <form id="myForm">
+        <div class="participate-form">
+        <h2>If you would like to particpate,<br> please register below.</h2><br>
+        </div>
+		<label>First Name</label>
+		<input name="Full Name" size="55" />
+		<br><br/>
+		<label>Home Address</label>
+		<input name="Street Address" size="55" />
+		<br><br/>
+		<label>Message</label>
+		<input name="Message" size="55" placeholder="What time will you be home to participate etc." />
+		<br><br/>
+	</form>
+  <button onclick="SubForm()">Submit</button>
+    </div>
+            
+<div class="participating-houses">
+    <h3>Participating Houses</h3>
+            </div>
+<table class="scrolldown">
+   
+          
+        <!-- Table head content -->
+        <thead>
+            <tr>
+                <th style="width:10%">Home Address</th>
+                <th style="width:10%">Name</th>
+                <th style="width:10%">Message</th>
+            </tr>
+        </thead>
+        
+        <!-- Table body content -->
+        <tbody>
+            <tr>
+                <td style="width:10%"></td>
+                <td style="width:10%"></td>
+                <td style="width:10%"></td>
+            </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr><tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr><tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr><tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr><tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr><tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr><tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr><tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr><tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+         <div class="google-map" id="Googlemap">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1A56Om3CRQu0O2aQ-cCFbbZSQJ2WxGc0&ehbc=2E312F" width="1600" height="600"></iframe>
+            </div>
+        </div>
+      </div>
+    
+    
+</body>
+</html>

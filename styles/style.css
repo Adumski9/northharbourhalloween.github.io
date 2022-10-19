@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 169vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),transparent),url(images/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.logo{
+    padding-bottom: 10px;
+    width: 240px;
+    cursor: pointer;
+    display: flex;
+}
+.wrapper{
+    height: 100px;
+    width: 95%;
+    margin-left: 50px;
+}
+header{
+    width: 100%;
+    height: auto;
+    background: #0f2c53;
+    position: relative;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #fff;
+    transition: width 0.5s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+.text-box{
+    color: #fff;
+    position: relative;
+    padding: 2%;
+    text-align: center;
+}
+.text-box h1{
+    color: #fea13b;
+    font-size: 120px;
+    line-height: 150px;
+    text-align: center;
+}
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.google-map{
+    margin: 0 auto;
+    margin-top: 500px;
+    
+}
+.participating-houses h3{
+    margin-left: 300px;
+    position: absolute;
+    padding-left: 35%;
+    padding-top: 1%;
+}
+        table.scrolldown {
+            margin-left: 35%;
+            padding: 1%;
+            width: 1050px;
+            height: 420px;
+            position: absolute;
+              
+            /* border-collapse: collapse; */
+            padding-top: 5%;
+            border-spacing: 0;
+            border: 4px solid #fea13b;
+        }
+          
+        /* To display the block as level element */
+        table.scrolldown tbody, table.scrolldown thead {
+            display: block;
+        } 
+          
+        thead tr th {
+            width: 400px;
+            height: 40px; 
+            line-height: 40px;
+            font-size: 20px;
+        }
+table.scrolldown tbody::-webkit-scrollbar {
+            display: none;
+            
+} 
+        table.scrolldown tbody {
+              
+            /* Set the height of table body */
+            height: 250px; 
+            -ms-overflow-style: none;
+            -scrollbar-width: none;
+            /* Set vertical scroll */
+            overflow-y: auto;
+            
+              
+            /* Hide the horizontal scroll */
+            overflow-x: hidden; 
+        }
+          
+        tbody { 
+            border-top: 1px solid #fea13b;
+        }
+          
+        tbody td, thead th {
+            width : 200px;
+            height: 40px;
+            border-top: 2px solid #fea13b;
+            border-left: 2px solid #fea13b;
+            border-right: 2px solid #fea13b;
+            border-bottom: 2px solid #fea13b;
+        }
+        td {
+            text-align:left;
+            color: black;
+            background-color: #fff;
+        }
+Full Name, Street Address, Message {
+            width: 100%;
+            margin: 0.5%;
+        }
+        textarea {
+            width: 100%;
+            margin: 0.5%;
+        }
+        button{
+            width: 20%; 
+            height: 10%;
+            margin: 1%;
+        }
+.myform{
+   width: 500px;
+    height: 420px;
+    position: absolute;
+    padding: 1%;
+    margin-left: 6%;
+    border: 5px solid #fea13b; 
+    
+}
+.h3disclaimer{
+    margin-top: -10px;
+    font-weight: 100;
+    font-size: 20px;
+}
